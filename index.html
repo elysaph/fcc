@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+  <head>
+
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <title>Survey Form</title>
+    <p id="description">Tell us a bit about yourself</p>
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">First name <input required id="name" placeholder="Name"></input></label>
+      <label id="email-label">Your best email <input required id="email" type="email" placeholder="Email"></input></label>
+      <label for="new-password">Create a new password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required placeholder="Password"/></label>
+      </fieldset>
+      <fieldset>
+      <label id="number-label">Your age (number) <input id="number" type="number" min="18" max="120" placeholder="Age"></input></label>
+       <label>Please select your gender: 
+      <label for="gender"><input id="gender" type="radio" name="gender" class="inline" value="male" /> Male</label>
+      <label for="gender"><input id="gender" type="radio" name="gender" class="inline" value="female" /> Female</label>
+      </label>
+      <label for="region">Select your region 
+      <select id="dropdown" name="region">
+        <option value="">Select region...</option>
+        <option value="">Île-de-France</option>
+        <option value="">Nederland</option>
+        <option value="">Sverige</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <label for="interests">Select your interests
+       <label for="music" name="interests">
+          <input id="music" type="checkbox" required name="interests" class="inline" value="music" /> Music
+        </label>
+        <label for="photography" name="interests">
+          <input id="photography" type="checkbox" required name="interests" class="inline" value="photography" /> Photography
+        </label>
+        <label for="cooking" name="interests">
+          <input id="cooking" type="checkbox" required name="interests" class="inline" value="cooking" /> Cooking
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like anime and..."></textarea>
+        </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
